@@ -1,0 +1,24 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "wordpress-local",
+      "runtimeExecutable": "npx",
+      "runtimeArgs": [
+        "-y",
+        "@wp-playground/cli@latest",
+        "server",
+        "--port=9400",
+        "--mount=wordpress/ofri-theme:/wordpress/wp-content/themes/ofri-theme",
+        "--blueprint=wordpress/blueprint.json"
+      ],
+      "port": 9400
+    },
+    {
+      "name": "original-site",
+      "runtimeExecutable": "py",
+      "runtimeArgs": ["-3", "-m", "http.server", "9401", "--bind", "127.0.0.1"],
+      "port": 9401
+    }
+  ]
+}
