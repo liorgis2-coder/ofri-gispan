@@ -6,9 +6,26 @@
 
 defined( 'ABSPATH' ) || exit;
 
+const OFRI_SETUP_VERSION = '1';
+
 add_action( 'after_switch_theme', 'ofri_setup_site' );
 
+// Hosts that activate themes without switch_theme() (Hostinger's API does) never fire
+// after_switch_theme, so the first request after activation runs the setup instead.
+add_action(
+	'init',
+	function () {
+		if ( get_option( 'ofri_setup_version' ) !== OFRI_SETUP_VERSION ) {
+			ofri_setup_site();
+		}
+	},
+	100
+);
+
 function ofri_setup_site() {
+	// Recorded first, so a second request arriving mid-setup doesn't start it again.
+	update_option( 'ofri_setup_version', OFRI_SETUP_VERSION );
+
 	$ids = array();
 	foreach ( ofri_pages() as $slug => $page ) {
 		$found = get_page_by_path( $slug );
