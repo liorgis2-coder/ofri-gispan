@@ -13,7 +13,7 @@ while ( have_posts() ) :
       <a class="back" href="<?php echo esc_url( ofri_link( 'blog' ) ); ?>">→ לכל המאמרים</a>
       <?php if ( $cat ) : ?><p class="eyebrow"><?php echo esc_html( $cat ); ?></p><?php endif; ?>
       <h1><?php the_title(); ?></h1>
-      <p class="sub">עפרי גיספאן · <time datetime="<?php echo esc_attr( get_the_date( 'c' ) ); ?>"><?php echo esc_html( get_the_date() ); ?></time></p>
+      <p class="sub">עפרי גיספאן · <time datetime="<?php echo esc_attr( get_the_date( 'c' ) ); ?>"><?php echo esc_html( get_the_date( 'j בF Y' ) ); ?></time></p>
     </div>
   </header>
   <section class="sec">

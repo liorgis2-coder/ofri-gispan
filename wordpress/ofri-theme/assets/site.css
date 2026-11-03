@@ -759,8 +759,13 @@ figure,blockquote{margin:0}
 .post-body h2{font-size:clamp(1.5rem,3vw,1.9rem)}
 .post-body h3{font-size:clamp(1.25rem,2.4vw,1.45rem)}
 .post-body h4{font-size:1.15rem}
-.post-body ul,.post-body ol{margin:0;padding-inline-start:1.4em;display:flex;flex-direction:column;gap:.5em}
-.post-body ul.pb-choices{padding:0}
+.post-body ul,.post-body ol{margin:0;padding-inline-start:1.4em}
+.post-body ul{list-style:disc}
+.post-body ol{list-style:decimal}
+.post-body li+li{margin-top:.5em}
+.post-body li::marker{color:var(--gold)}
+.post-body ul.pb-choices{padding:0;list-style:none}
+.post-body .pb-choices li+li{margin-top:0}
 .post-body blockquote{margin:0;padding-inline-start:22px;border-inline-start:1px solid var(--gold);font-family:var(--f-serif);font-weight:300;font-size:1.3rem;color:var(--olive)}
 .post-body img{max-width:100%;height:auto;border-radius:var(--r)}
 .post-body figure{margin:0}
