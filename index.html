@@ -20,33 +20,33 @@
    a two-column story, a path, doors, a collage, a descending process, one quote at a time, a slow close.
    One gold thread is drawn through all of it as you scroll. */
 :root{
-  --bg:#EFEEE9;
-  --sand:#E7E1D3;
-  --clay:#DACEB4;
-  --paper:#F7F6F2;
-  --ink:#2E332C;
-  --ink-soft:#5D6458;
-  --olive:#646C5D;
-  --olive-deep:#4C5347;
-  --sage:#A7B199;
-  --sage-wash:#E0E4D8;
-  --earth:#946F66;
-  --gold:#946F66;
-  --gold-soft:#DACEB4;
-  --dusk:#3A4037;
-  --dusk-2:#2C3229;
-  --line:#D6D5CE;
-  --on-dusk:#E9E8E0;
-  --on-dusk-soft:#B8BDB0;
-  --veil:rgba(239,238,233,.86);
-  --mist:#E1E5DE;
-  --aura:#EDE4DF;
-  --night:#2D332C;
-  --night-2:#20251F;
-  --star:#F1ECDD;
-  --halo:rgba(248,246,236,.95);
-  --shade:rgba(44,50,42,.26);
-  --glow:rgba(236,231,212,.7);
+  --bg:#F7F3EC;
+  --sand:#E8E0D0;
+  --clay:#DDD2BE;
+  --paper:#FCFAF6;
+  --ink:#514238;
+  --ink-soft:#6F6257;
+  --olive:#626B4E;
+  --olive-deep:#4C543C;
+  --sage:#85937A;
+  --sage-wash:#E6E9DE;
+  --earth:#B7836C;
+  --gold:#85937A;
+  --gold-soft:#C9D0BE;
+  --dusk:#3D4033;
+  --dusk-2:#2E3127;
+  --line:#E0D8CA;
+  --on-dusk:#F1EADF;
+  --on-dusk-soft:#C2BBA9;
+  --veil:rgba(247,243,236,.86);
+  --mist:#E9EBE3;
+  --aura:#F1E7E0;
+  --night:#33372B;
+  --night-2:#262920;
+  --star:#F5EEDC;
+  --halo:rgba(253,248,236,.95);
+  --shade:rgba(60,48,38,.24);
+  --glow:rgba(246,236,214,.7);
 
   --f-serif:"Frank Ruhl Libre","David Libre","Times New Roman",serif;
   --f-sans:"Assistant","Heebo","Arial Hebrew",Arial,sans-serif;
@@ -65,6 +65,8 @@
   --arch:999px 999px 20px 20px;
   --ease:cubic-bezier(.22,.61,.24,1);
   color-scheme:light;
+  --gilt:#C4AC7C;
+  --terra:#B7836C;
 }
 *,*::before,*::after{box-sizing:border-box}
 [hidden]{display:none!important}
@@ -766,9 +768,18 @@ figure,blockquote{margin:0}
 
 .work-card.wc-wide{grid-column:1/-1}
 
-/* ---------- palette: Timeless Elegance (wheat, highland, pear blossom, cinnamon, emerald) ---------- */
+/* ---------- decorative plates: sage and wheat tints ---------- */
 .ph[data-plate="field"]:not([data-photo]) img,.ph[data-plate="water"]:not([data-photo]) img,.ph[data-plate="window"]:not([data-photo]) img{filter:hue-rotate(38deg) saturate(.62) brightness(1.02)}
 .ph[data-plate="sand"]:not([data-photo]) img,.ph[data-plate="linen"]:not([data-photo]) img,.ph[data-plate="haze"]:not([data-photo]) img{filter:saturate(.72) brightness(1.02)}
+
+/* ---------- palette v2: cream background, sage lines and icons, deep olive buttons, deep brown text,
+   gold kept only for decoration (softer), smoked terracotta in small touches ---------- */
+.thread .t-line{stroke:var(--gilt);opacity:.55}
+.seed,.moons,.veil-mark,.emblem,.trine-core{color:var(--gilt)}
+.emblem{filter:drop-shadow(0 0 12px rgba(196,172,124,.3))}
+.tc{stroke:var(--gilt)}
+.mb-line{background:linear-gradient(to bottom,transparent,var(--gilt))}
+.eyebrow,.brand small,.post-card .cat,.pv-kind,.wc-k,.pull b{color:var(--terra)}
 </style>
 </head>
 <body>
