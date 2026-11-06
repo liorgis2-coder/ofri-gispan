@@ -20,33 +20,33 @@
    a two-column story, a path, doors, a collage, a descending process, one quote at a time, a slow close.
    One gold thread is drawn through all of it as you scroll. */
 :root{
-  --bg:#F5EEE3;
-  --sand:#EDE3D3;
-  --clay:#E3D5BF;
-  --paper:#FBF7F0;
-  --ink:#3A3128;
-  --ink-soft:#6A5E51;
-  --olive:#5D6345;
-  --olive-deep:#464B33;
-  --sage:#A4A78C;
-  --sage-wash:#E6E3D2;
-  --earth:#8A6B50;
-  --gold:#AE8B55;
-  --gold-soft:#D8C39C;
-  --dusk:#3D362C;
-  --dusk-2:#2F2A22;
-  --line:#DCCDB6;
-  --on-dusk:#EDE2CF;
-  --on-dusk-soft:#BFB29C;
-  --veil:rgba(245,238,227,.86);
-  --mist:#E6DFE6;
-  --aura:#ECDFDC;
-  --night:#2E2931;
-  --night-2:#211D25;
-  --star:#F7EBD2;
-  --halo:rgba(255,240,210,.95);
-  --shade:rgba(58,44,30,.28);
-  --glow:rgba(255,236,200,.7);
+  --bg:#EFEEE9;
+  --sand:#E7E1D3;
+  --clay:#DACEB4;
+  --paper:#F7F6F2;
+  --ink:#2E332C;
+  --ink-soft:#5D6458;
+  --olive:#646C5D;
+  --olive-deep:#4C5347;
+  --sage:#A7B199;
+  --sage-wash:#E0E4D8;
+  --earth:#946F66;
+  --gold:#946F66;
+  --gold-soft:#DACEB4;
+  --dusk:#3A4037;
+  --dusk-2:#2C3229;
+  --line:#D6D5CE;
+  --on-dusk:#E9E8E0;
+  --on-dusk-soft:#B8BDB0;
+  --veil:rgba(239,238,233,.86);
+  --mist:#E1E5DE;
+  --aura:#EDE4DF;
+  --night:#2D332C;
+  --night-2:#20251F;
+  --star:#F1ECDD;
+  --halo:rgba(248,246,236,.95);
+  --shade:rgba(44,50,42,.26);
+  --glow:rgba(236,231,212,.7);
 
   --f-serif:"Frank Ruhl Libre","David Libre","Times New Roman",serif;
   --f-sans:"Assistant","Heebo","Arial Hebrew",Arial,sans-serif;
@@ -568,7 +568,7 @@ figure,blockquote{margin:0}
 .seed{position:absolute;color:var(--gold);pointer-events:none;overflow:visible;height:auto;aspect-ratio:1}
 @keyframes seedspin{from{transform:translate(-50%,-50%) rotate(0deg)}to{transform:translate(-50%,-50%) rotate(360deg)}}
 .h-seed{left:50%;top:46%;width:132%;transform:translate(-50%,-50%);opacity:.3;animation:seedspin 260s linear infinite}
-.h-halo{position:absolute;left:52%;top:40%;width:112%;aspect-ratio:1;border-radius:50%;transform:translate(-50%,-50%);background:radial-gradient(closest-side,var(--halo),rgba(255,236,205,.55) 45%,rgba(232,214,226,.28) 72%,transparent);animation:halo 12s ease-in-out infinite;pointer-events:none}
+.h-halo{position:absolute;left:52%;top:40%;width:112%;aspect-ratio:1;border-radius:50%;transform:translate(-50%,-50%);background:radial-gradient(closest-side,var(--halo),rgba(236,232,214,.55) 45%,rgba(232,214,226,.28) 72%,transparent);animation:halo 12s ease-in-out infinite;pointer-events:none}
 @keyframes halo{0%,100%{opacity:.7;transform:translate(-50%,-50%) scale(.94)}50%{opacity:1;transform:translate(-50%,-50%) scale(1.04)}}
 .h-ring{display:none}
 .motes{position:absolute;inset:0;width:100%;height:100%;pointer-events:none;z-index:0}
@@ -577,7 +577,7 @@ figure,blockquote{margin:0}
 .hero-more{color:var(--ink-soft);max-width:54ch;line-height:1.85}
 .b-seed{left:50%;top:50%;width:270%;transform:translate(-50%,-50%);opacity:.26;animation:seedspin 320s linear infinite reverse}
 .breath-orb .ph{z-index:1}
-.breath-orb .ph::after{content:"";position:absolute;inset:0;border-radius:50%;box-shadow:inset 0 0 40px 10px rgba(255,244,222,.6)}
+.breath-orb .ph::after{content:"";position:absolute;inset:0;border-radius:50%;box-shadow:inset 0 0 40px 10px rgba(242,240,230,.6)}
 .breath-orb{filter:drop-shadow(0 0 40px rgba(255,226,180,.55))}
 .moons{width:170px;height:auto;color:var(--gold);opacity:.75;margin-bottom:4px}
 .c-seed{left:46%;top:44%;width:clamp(280px,36vw,470px);transform:translate(-50%,-50%);opacity:.2;animation:seedspin 380s linear infinite}
@@ -655,7 +655,7 @@ figure,blockquote{margin:0}
 .meet-links{display:flex;flex-wrap:wrap;gap:14px 32px}
 .meet-art{display:flex;flex-direction:column;align-items:center;gap:26px;min-width:0}
 .trine{position:relative;width:min(100%,460px);aspect-ratio:1}
-.trine::before{content:"";position:absolute;left:50%;top:53.75%;width:86%;aspect-ratio:1;border-radius:50%;transform:translate(-50%,-50%);background:radial-gradient(closest-side,var(--halo),rgba(255,236,205,.4) 55%,transparent);animation:halo 12s ease-in-out infinite}
+.trine::before{content:"";position:absolute;left:50%;top:53.75%;width:86%;aspect-ratio:1;border-radius:50%;transform:translate(-50%,-50%);background:radial-gradient(closest-side,var(--halo),rgba(236,232,214,.4) 55%,transparent);animation:halo 12s ease-in-out infinite}
 .trine-svg{position:absolute;inset:0;width:100%;height:100%;overflow:visible}
 .tc{fill:color-mix(in srgb,var(--gold) 7%,transparent);stroke:var(--gold);stroke-width:1.1;stroke-dasharray:680;stroke-dashoffset:680;transition:stroke-dashoffset 2.8s var(--ease),fill .9s var(--ease),stroke-width .9s var(--ease)}
 .tc-body{transition-delay:.45s}.tc-soul{transition-delay:.9s}
@@ -691,7 +691,7 @@ figure,blockquote{margin:0}
 @media(min-width:820px){.press-video{grid-template-columns:1.25fr 1fr;align-items:center;gap:40px;padding:18px}}
 .pv-media{position:relative;display:block}
 .pv-img{aspect-ratio:16/9;border-radius:20px}
-.pv-play{position:absolute;left:50%;top:50%;width:78px;height:78px;transform:translate(-50%,-50%);border-radius:50%;display:grid;place-items:center;background:rgba(255,250,242,.86);box-shadow:0 0 0 10px rgba(255,250,242,.28),0 20px 40px -20px var(--shade);transition:transform .8s var(--ease)}
+.pv-play{position:absolute;left:50%;top:50%;width:78px;height:78px;transform:translate(-50%,-50%);border-radius:50%;display:grid;place-items:center;background:rgba(247,246,242,.86);box-shadow:0 0 0 10px rgba(247,246,242,.28),0 20px 40px -20px var(--shade);transition:transform .8s var(--ease)}
 .pv-play svg{width:30px;height:30px;fill:var(--olive);margin-left:4px}
 .pv-body{display:flex;flex-direction:column;gap:12px;padding:6px 8px 10px;align-items:flex-start}
 .pv-kind{font-size:.8rem;letter-spacing:.2em;font-weight:600;color:var(--gold)}
@@ -740,12 +740,12 @@ figure,blockquote{margin:0}
 .appr-vis{position:relative;margin:12px 0 0;width:100%;aspect-ratio:16/10;border-radius:24px;overflow:hidden;isolation:isolate;box-shadow:0 24px 50px -40px var(--shade)}
 @media(min-width:880px){.appr-vis{aspect-ratio:1/1.12;border-radius:var(--arch);margin-top:20px}}
 .appr-vis .av-img{position:absolute;inset:0;border-radius:inherit}
-.appr-vis::after{content:"";position:absolute;inset:0;z-index:1;pointer-events:none;background:radial-gradient(closest-side at 50% 52%,rgba(255,250,242,.9),rgba(255,250,242,.55) 62%,rgba(255,250,242,.18))}
+.appr-vis::after{content:"";position:absolute;inset:0;z-index:1;pointer-events:none;background:radial-gradient(closest-side at 50% 52%,rgba(247,246,242,.9),rgba(247,246,242,.55) 62%,rgba(247,246,242,.18))}
 .av-art{position:absolute;left:10%;top:8%;width:80%;height:84%;z-index:2;overflow:visible}
-.av-art *{fill:none;stroke:#7A5E34;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round}
+.av-art *{fill:none;stroke:var(--olive-deep);stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round}
 .av-art [pathLength]{stroke-dasharray:1;stroke-dashoffset:1;transition:stroke-dashoffset 2.8s var(--ease)}
-.av-art .f{fill:#7A5E34;stroke:none;opacity:0;transition:opacity 1.4s var(--ease) 1.6s}
-.av-art .g{fill:rgba(236,204,146,.6);stroke:none;opacity:0;transition:opacity 2s var(--ease) .8s}
+.av-art .f{fill:var(--olive-deep);stroke:none;opacity:0;transition:opacity 1.4s var(--ease) 1.6s}
+.av-art .g{fill:rgba(218,206,180,.75);stroke:none;opacity:0;transition:opacity 2s var(--ease) .8s}
 .av-art .d{stroke-dasharray:2 5;opacity:0;transition:opacity 1.6s var(--ease) 1.2s}
 .appr-vis.drawn [pathLength]{stroke-dashoffset:0}
 .appr-vis.drawn .f,.appr-vis.drawn .d{opacity:1}
@@ -765,6 +765,10 @@ figure,blockquote{margin:0}
 .ap-invite p{font-family:var(--f-serif);font-weight:300;font-size:clamp(1.25rem,2.6vw,1.6rem);line-height:1.6;color:var(--olive);margin:0}
 
 .work-card.wc-wide{grid-column:1/-1}
+
+/* ---------- palette: Timeless Elegance (wheat, highland, pear blossom, cinnamon, emerald) ---------- */
+.ph[data-plate="field"]:not([data-photo]) img,.ph[data-plate="water"]:not([data-photo]) img,.ph[data-plate="window"]:not([data-photo]) img{filter:hue-rotate(38deg) saturate(.62) brightness(1.02)}
+.ph[data-plate="sand"]:not([data-photo]) img,.ph[data-plate="linen"]:not([data-photo]) img,.ph[data-plate="haze"]:not([data-photo]) img{filter:saturate(.72) brightness(1.02)}
 </style>
 </head>
 <body>
