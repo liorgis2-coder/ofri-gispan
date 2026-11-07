@@ -862,11 +862,11 @@ body::after{content:"";position:fixed;inset:0;z-index:2;pointer-events:none;opac
   .door:hover,.aud:hover,.work-card:hover,.post-card:hover{transform:none}
 }
 
-/* ---------- real images: edges dissolve into the page background ---------- */
+/* ---------- real images: softened so they flow with the cream and the portrait ---------- */
 .ph[data-plate="fern"] img{filter:saturate(.7) contrast(.9) brightness(1.12) sepia(.1)}
 .ph[data-plate="ripple"] img{filter:saturate(.82) contrast(.94) brightness(1.04) sepia(.07)}
-.h-small[data-plate="fern"],.h-circle[data-plate="ripple"],.about-dot[data-plate="ripple"]{box-shadow:none;background:transparent;-webkit-mask-image:radial-gradient(closest-side,#000 46%,rgba(0,0,0,.78) 64%,rgba(0,0,0,.32) 84%,transparent 100%);mask-image:radial-gradient(closest-side,#000 46%,rgba(0,0,0,.78) 64%,rgba(0,0,0,.32) 84%,transparent 100%)}
-.h-small[data-plate="fern"]::after,.h-circle[data-plate="ripple"]::after,.about-dot[data-plate="ripple"]::after{content:"";position:absolute;inset:0;z-index:1;pointer-events:none;box-shadow:none;border-radius:0;background:linear-gradient(165deg,rgba(247,243,236,.3) 0%,transparent 45%)}
+.h-small[data-plate="fern"]::after,.h-circle[data-plate="ripple"]::after,.about-dot[data-plate="ripple"]::after{content:"";position:absolute;inset:0;z-index:1;border-radius:inherit;pointer-events:none;background:linear-gradient(165deg,rgba(247,243,236,.42) 0%,rgba(247,243,236,.08) 42%,transparent 60%,rgba(98,107,78,.08) 100%);box-shadow:inset 0 0 28px 4px rgba(247,243,236,.5)}
+.h-small[data-plate="fern"],.h-circle[data-plate="ripple"],.about-dot[data-plate="ripple"]{box-shadow:0 0 0 5px rgba(247,243,236,.7),0 0 0 6px rgba(201,208,190,.55),0 28px 54px -32px rgba(76,84,60,.42)}
 </style>
 </head>
 <body>
